@@ -1,0 +1,11 @@
+{
+  "name": "7368f118-ebf1-4394-9fef-a574bb95fa2e",
+  "displayName": "user.yes.confirm",
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-contextual",
+    "value": "sys-contextual"
+  } ],
+  "description": "Used as a follow-up intent to confirm escalation details (e.g., \"Do you want to proceed with the handoff?\")",
+  "numTrainingPhrases": 4
+}

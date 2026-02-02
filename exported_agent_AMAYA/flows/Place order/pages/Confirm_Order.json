@@ -1,0 +1,17 @@
+{
+  "name": "bb3032e9-90dd-49ae-80e4-7638fc134376",
+  "displayName": "Confirm_Order",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Here’s your order,\nName: $session.params.full_name\nContact: $session.params.contact_number\nLocation: $session.params.delivery_location\nDelivery: $session.params.delivery_method\n\nSending this to our team now ,we willreach out soon for fulfillment💛" ]
+      },
+      "languageCode": "en"
+    } ],
+    "webhook": "storeOrderInfo",
+    "tag": "order"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Is the "
+    }, {
+      "text": "[leather cuff bracelet]",
+      "parameterId": "any"
+    }, {
+      "text": " available in "
+    }, {
+      "text": "brown",
+      "parameterId": "color"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you have any ["
+    }, {
+      "text": "silver",
+      "parameterId": "color"
+    }, {
+      "text": " "
+    }, {
+      "text": "charm bracelets]",
+      "parameterId": "any"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Are the "
+    }, {
+      "text": "[beaded anklets]",
+      "parameterId": "any"
+    }, {
+      "text": " in stock?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Are the "
+    }, {
+      "text": "butterfly wiastchains",
+      "parameterId": "any"
+    }, {
+      "text": " in stock ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is "
+    }, {
+      "text": "[Gold rings chain]",
+      "parameterId": "any"
+    }, {
+      "text": " available?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you have "
+    }, {
+      "text": "[black boho belt]",
+      "parameterId": "any"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "17ae2709-b5c2-4c26-8bbe-5aa166312aac",
+  "displayName": "user.place.order",
+  "parameters": [ {
+    "id": "any",
+    "entityType": "@sys.any"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-contextual",
+    "value": "sys-contextual"
+  } ],
+  "description": "To assist the business by logging orders.",
+  "numTrainingPhrases": 13
+}

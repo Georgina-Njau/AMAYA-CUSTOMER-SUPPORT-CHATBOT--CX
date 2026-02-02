@@ -1,0 +1,11 @@
+{
+  "name": "245617b7-1596-45fe-9a96-071c55ed1f11",
+  "displayName": "Inventory Webhook",
+  "genericWebService": {
+    "uri": "https://script.google.com/macros/s/AKfycbwdPG23CwtXJ46mWPe_r0rPirKIojBKxK00r48rwb3KoR6rwTWkl8me2Zop3V6qyoZGxA/exec",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "b35d49b6-fa85-4597-b16e-d33d5aaa2a84",
+  "displayName": "Collect_DeliveryLocation",
+  "form": {
+    "parameters": [ {
+      "displayName": "delivery_location",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Where should we deliver this order?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collect_DeliveryMethod",
+    "name": "4d5b19c5-c282-41b5-ac81-5eb929a1e117"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Collect_DeliveryMethod",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great! How would you like your order delivered — pickup in CBD, home delivery, or courier?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "delivery_location",
+        "value": "$session.params.raw_user_input"
+      } ]
+    },
+    "name": "071a2e25-8abe-47a6-9357-6df336e77270"
+  } ]
+}

@@ -1,0 +1,7 @@
+{
+  "entities": [ {
+    "value": "order status",
+    "synonyms": [ "delivery information", "order status", "order updates", "shipping status" ],
+    "languageCode": "en"
+  } ]
+}

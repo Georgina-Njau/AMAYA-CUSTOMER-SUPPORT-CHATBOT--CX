@@ -1,0 +1,11 @@
+{
+  "name": "be6d687a-a5d1-4714-89a5-69567ca1ea20",
+  "displayName": "user.faq.general",
+  "parameters": [ {
+    "id": "any",
+    "entityType": "@sys.any"
+  } ],
+  "priority": 500000,
+  "description": "This intent is triggered when a user asks general faqs",
+  "numTrainingPhrases": 4
+}

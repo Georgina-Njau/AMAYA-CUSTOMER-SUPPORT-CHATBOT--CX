@@ -1,0 +1,15 @@
+{
+  "name": "207fa58e-fb11-4462-9986-03aa38a1f522",
+  "displayName": "Handoff-Confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thank you for reaching out to us , enjoy the rest of your day !" ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

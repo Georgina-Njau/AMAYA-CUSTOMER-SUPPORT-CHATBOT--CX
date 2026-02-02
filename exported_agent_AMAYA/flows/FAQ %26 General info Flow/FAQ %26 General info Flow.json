@@ -1,0 +1,66 @@
+{
+  "name": "4aed26b0-dde9-4b74-aeba-96d955a9e04b",
+  "displayName": "FAQ \u0026 General info Flow",
+  "transitionRoutes": [ {
+    "intent": "delivery-info",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "delivery info",
+    "name": "efd56290-55bd-402e-8c6d-7afe96d26766"
+  }, {
+    "intent": "payment options",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "payment options",
+    "name": "0591dd9c-a33e-4bd3-871b-01cfefd8a72c"
+  }, {
+    "intent": "refund policy",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "refund policy",
+    "name": "b9502cd8-32ee-4c5c-9f1a-ba77cbbb9d09"
+  }, {
+    "intent": "shipping info",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "shipping info",
+    "name": "ad9d76c1-b202-491a-8580-a00249f147c2"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e47d3cf2-ae14-4c92-a4c3-03c719d91ebb"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e210ad41-d067-4021-86fd-ad33c86193bc"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "6ce14056-300e-4b67-8409-9fb4abef7fb6",
+    "languageCode": "en"
+  } ]
+}

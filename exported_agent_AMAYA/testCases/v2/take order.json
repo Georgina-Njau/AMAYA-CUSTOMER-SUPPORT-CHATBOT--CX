@@ -1,0 +1,262 @@
+{
+  "name": "f0c68311-0659-414b-bd7f-c58b377e262c",
+  "displayName": "take order",
+  "conversationTurns": [ {
+    "userInput": {
+      "input": {
+        "text": {
+          "text": "howdy"
+        },
+        "languageCode": "en"
+      },
+      "enableWebhook": true
+    },
+    "agentOutput": {
+      "queryResult": {
+        "responseMessages": [ {
+          "text": {
+            "text": [ "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?" ],
+            "redactedText": [ "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?" ]
+          }
+        } ],
+        "currentPage": {
+          "name": "Start Page",
+          "flow": "Default Start Flow"
+        },
+        "diagnosticInfo": {
+          "Triggered Transition Names": [ "9806fb16-12e4-403c-97fa-b92d3f4136c1" ]
+        },
+        "triggerIntent": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/intents/00000000-0000-0000-0000-000000000000",
+        "currentFlow": {
+          "name": "Default Start Flow"
+        }
+      }
+    },
+    "orderedExpectations": [ {
+      "expectations": [ {
+        "expectedPage": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedIntent": "Default Welcome Intent"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedAgentReply": "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?"
+      } ]
+    } ]
+  }, {
+    "userInput": {
+      "input": {
+        "text": {
+          "text": "I want to place an order"
+        },
+        "languageCode": "en"
+      },
+      "enableWebhook": true
+    },
+    "agentOutput": {
+      "queryResult": {
+        "responseMessages": [ {
+          "text": {
+            "text": [ "Please tell me the full name for the order." ],
+            "redactedText": [ "Please tell me the full name for the order." ]
+          }
+        } ],
+        "currentPage": {
+          "name": "Collect_Name",
+          "flow": "Place order "
+        },
+        "diagnosticInfo": {
+          "Triggered Transition Names": [ "c540931b-f84d-459f-98c6-1f6c0114e80a", "7e53b257-4c0e-4df3-a13d-5ac85ee5bce8" ]
+        },
+        "triggerIntent": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/intents/17ae2709-b5c2-4c26-8bbe-5aa166312aac",
+        "currentFlow": {
+          "name": "Place order "
+        }
+      }
+    },
+    "orderedExpectations": [ {
+      "expectations": [ {
+        "expectedPage": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/d3ad3c0c-80d9-48b6-872d-01a840447491/pages/e330f3ad-6404-4fc7-95ca-11f8adf319c2"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedIntent": "user.place.order"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedAgentReply": "Please tell me the full name for the order."
+      } ]
+    } ]
+  }, {
+    "userInput": {
+      "input": {
+        "text": {
+          "text": "Elsie"
+        },
+        "languageCode": "en"
+      },
+      "enableWebhook": true
+    },
+    "agentOutput": {
+      "queryResult": {
+        "responseMessages": [ {
+          "text": {
+            "text": [ "Please give a contact number we can reach." ],
+            "redactedText": [ "Please give a contact number we can reach." ]
+          }
+        } ],
+        "currentPage": {
+          "name": "Collect_Contact",
+          "flow": "Place order "
+        },
+        "diagnosticInfo": {
+          "Triggered Transition Names": [ "ee7138ab-5ac2-4ae1-810b-6a1c9bdccb25" ]
+        },
+        "currentFlow": {
+          "name": "Place order "
+        }
+      }
+    },
+    "orderedExpectations": [ {
+      "expectations": [ {
+        "expectedPage": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/d3ad3c0c-80d9-48b6-872d-01a840447491/pages/f368a055-dd45-4516-bd9f-52e9da9faad6"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedAgentReply": "Please give a contact number we can reach."
+      } ]
+    } ]
+  }, {
+    "userInput": {
+      "input": {
+        "text": {
+          "text": "0788991458"
+        },
+        "languageCode": "en"
+      },
+      "enableWebhook": true
+    },
+    "agentOutput": {
+      "queryResult": {
+        "responseMessages": [ {
+          "text": {
+            "text": [ "Where should we deliver this order?" ],
+            "redactedText": [ "Where should we deliver this order?" ]
+          }
+        } ],
+        "currentPage": {
+          "name": "Collect_DeliveryLocation",
+          "flow": "Place order "
+        },
+        "diagnosticInfo": {
+          "Triggered Transition Names": [ "63225713-f7c8-4973-889b-786e7d5b96ce" ]
+        },
+        "currentFlow": {
+          "name": "Place order "
+        }
+      }
+    },
+    "orderedExpectations": [ {
+      "expectations": [ {
+        "expectedPage": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/d3ad3c0c-80d9-48b6-872d-01a840447491/pages/b35d49b6-fa85-4597-b16e-d33d5aaa2a84"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedAgentReply": "Where should we deliver this order?"
+      } ]
+    } ]
+  }, {
+    "userInput": {
+      "input": {
+        "text": {
+          "text": "Kiambu"
+        },
+        "languageCode": "en"
+      },
+      "enableWebhook": true
+    },
+    "agentOutput": {
+      "queryResult": {
+        "responseMessages": [ {
+          "text": {
+            "text": [ "Which delivery method would you like — pickup, courier or home delivery?" ],
+            "redactedText": [ "Which delivery method would you like — pickup, courier or home delivery?" ]
+          }
+        } ],
+        "currentPage": {
+          "name": "Collect_DeliveryMethod",
+          "flow": "Place order "
+        },
+        "diagnosticInfo": {
+          "Triggered Transition Names": [ "4d5b19c5-c282-41b5-ac81-5eb929a1e117" ]
+        },
+        "currentFlow": {
+          "name": "Place order "
+        }
+      }
+    },
+    "orderedExpectations": [ {
+      "expectations": [ {
+        "expectedPage": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/d3ad3c0c-80d9-48b6-872d-01a840447491/pages/6c5c6323-ce09-4784-94d3-4c83dbd0f853"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedAgentReply": "Which delivery method would you like — pickup, courier or home delivery?"
+      } ]
+    } ]
+  }, {
+    "userInput": {
+      "input": {
+        "text": {
+          "text": "CBD"
+        },
+        "languageCode": "en"
+      },
+      "enableWebhook": true
+    },
+    "agentOutput": {
+      "queryResult": {
+        "responseMessages": [ {
+          "text": {
+            "text": [ "Here’s your order, Ellie!\nName: Elsie\nContact: 0788991458\nLocation: Kiambu\nDelivery: CBD\n\nSending this to our team now ,we willreach out soon for fulfillment💛" ],
+            "redactedText": [ "Here’s your order, Ellie!\nName: Elsie\nContact: 0788991458\nLocation: Kiambu\nDelivery: CBD\n\nSending this to our team now ,we willreach out soon for fulfillment💛" ]
+          }
+        }, {
+          "text": {
+            "text": [ "Thanks Elsie! Your order has been recorded. We will deliver to Kiambu via CBD and contact you at 0788991458 if needed." ],
+            "redactedText": [ "Thanks Elsie! Your order has been recorded. We will deliver to Kiambu via CBD and contact you at 0788991458 if needed." ]
+          }
+        } ],
+        "currentPage": {
+          "name": "Confirm_Order",
+          "flow": "Place order "
+        },
+        "diagnosticInfo": {
+          "Triggered Transition Names": [ "8f95076a-e33f-4a49-b105-099c543c2445" ]
+        },
+        "currentFlow": {
+          "name": "Place order "
+        }
+      }
+    },
+    "orderedExpectations": [ {
+      "expectations": [ {
+        "expectedPage": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/d3ad3c0c-80d9-48b6-872d-01a840447491/pages/bb3032e9-90dd-49ae-80e4-7638fc134376"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedAgentReply": "Here’s your order, Ellie!\nName: Elsie\nContact: 0788991458\nLocation: Kiambu\nDelivery: CBD\n\nSending this to our team now ,we willreach out soon for fulfillment💛Thanks Elsie! Your order has been recorded. We will deliver to Kiambu via CBD and contact you at 0788991458 if needed."
+      } ]
+    } ]
+  } ],
+  "createTime": {
+    "seconds": 1764016007,
+    "nanos": 94750000
+  },
+  "testConfig": {
+    "startFlow": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE"
+  },
+  "languageCode": "en"
+}

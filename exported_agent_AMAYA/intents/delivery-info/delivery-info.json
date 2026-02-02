@@ -1,0 +1,14 @@
+{
+  "name": "3e68a7f1-1479-4e9d-a59b-ead2e24f4a6e",
+  "displayName": "delivery-info",
+  "parameters": [ {
+    "id": "geo-city",
+    "entityType": "@sys.geo-city"
+  }, {
+    "id": "inquiry_topic",
+    "entityType": "@Inquiry_Topic"
+  } ],
+  "priority": 500000,
+  "description": "triggered when the user asks a question about delivery options.",
+  "numTrainingPhrases": 9
+}

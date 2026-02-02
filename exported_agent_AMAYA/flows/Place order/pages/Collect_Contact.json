@@ -1,0 +1,46 @@
+{
+  "name": "f368a055-dd45-4516-bd9f-52e9da9faad6",
+  "displayName": "Collect_Contact",
+  "form": {
+    "parameters": [ {
+      "displayName": "contact_number",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please give a contact number we can reach." ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collect_DeliveryLocation",
+    "name": "63225713-f7c8-4973-889b-786e7d5b96ce"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Collect_DeliveryLocation",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thanks! Where should we deliver your order?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "contact_number",
+        "value": "$session.params.raw_user_input"
+      } ]
+    },
+    "name": "7e79b075-32dc-4a30-8a07-a85859283be5"
+  } ]
+}

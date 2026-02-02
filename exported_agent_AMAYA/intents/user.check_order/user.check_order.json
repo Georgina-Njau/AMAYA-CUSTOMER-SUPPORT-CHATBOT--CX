@@ -1,0 +1,11 @@
+{
+  "name": "c27deb89-fe27-4642-b00d-52265a0c9ac3",
+  "displayName": "user.check_order",
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "This intent is triggered when a user asks about their user status.",
+  "numTrainingPhrases": 5
+}

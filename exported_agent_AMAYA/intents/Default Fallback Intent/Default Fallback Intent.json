@@ -1,0 +1,11 @@
+{
+  "name": "00000000-0000-0000-0000-000000000001",
+  "displayName": "Default Fallback Intent",
+  "priority": 500000,
+  "isFallback": true,
+  "labels": [ {
+    "key": "sys-vague",
+    "value": "sys-vague"
+  } ],
+  "numTrainingPhrases": 6
+}

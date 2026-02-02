@@ -1,0 +1,53 @@
+{
+  "name": "33a86df3-ca0a-485a-b55c-c9f91c073420",
+  "displayName": "Collect Item Name",
+  "form": {
+    "parameters": [ {
+      "displayName": "product_query",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "targetFlow": "Product Inquiry Flow",
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Item not found .Please use the name of used on the advertisement for better results. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b2567dcd-7cc3-42d0-99ff-627f46a2adf0"
+        }, {
+          "targetFlow": "Product Inquiry Flow",
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please type in an input eg~ \"Black Boho Belt\"" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c097d4cf-35b0-4dc4-b105-3fb326ecf4c0"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "webhook": "Check Inventory",
+    "tag": "check_inventory"
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "webhook": "Inventory Webhook",
+      "tag": "inventory"
+    },
+    "name": "6bebcc99-bff0-4e71-b87b-55245e4c5466"
+  } ]
+}

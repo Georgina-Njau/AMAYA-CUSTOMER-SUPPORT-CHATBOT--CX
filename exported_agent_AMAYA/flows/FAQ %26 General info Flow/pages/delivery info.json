@@ -1,0 +1,15 @@
+{
+  "name": "156e7541-1aac-4560-8039-3c6dacdf7a42",
+  "displayName": "delivery info",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "We are currently an online store that offers deliveries around the country , depending on your location . We offer deliveries through \"pick-up mtaani \" as well as couriers for long distance or door delivery." ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

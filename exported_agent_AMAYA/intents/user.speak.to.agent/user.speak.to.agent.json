@@ -1,0 +1,11 @@
+{
+  "name": "8186be12-2521-4fa7-97c5-36f21ebacde8",
+  "displayName": "user.speak.to.agent",
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Is triggered when the user wants to speak to a human agent.",
+  "numTrainingPhrases": 11
+}

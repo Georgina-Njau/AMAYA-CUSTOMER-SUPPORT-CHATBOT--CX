@@ -1,0 +1,14 @@
+{
+  "name": "46bc8a2d-5ff5-4af9-b9b0-32a71c9d26e3",
+  "displayName": "user.check_inventory",
+  "parameters": [ {
+    "id": "any",
+    "entityType": "@sys.any"
+  }, {
+    "id": "color",
+    "entityType": "@sys.color"
+  } ],
+  "priority": 500000,
+  "description": "This intent is triggered when a user wants more information about a product.",
+  "numTrainingPhrases": 6
+}

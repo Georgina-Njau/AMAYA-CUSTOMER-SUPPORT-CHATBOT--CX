@@ -1,0 +1,879 @@
+{
+  "name": "af31148b-3440-454c-9865-27e03169e4e6",
+  "displayName": "faq-refund",
+  "conversationTurns": [ {
+    "userInput": {
+      "input": {
+        "text": {
+          "text": "hi"
+        }
+      },
+      "enableWebhook": true
+    },
+    "agentOutput": {
+      "queryResult": {
+        "text": "hi",
+        "languageCode": "en",
+        "responseMessages": [ {
+          "text": {
+            "text": [ "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?" ]
+          }
+        } ],
+        "currentPage": {
+          "name": "Start Page",
+          "flow": "Default Start Flow"
+        },
+        "intent": {
+          "name": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/intents/00000000-0000-0000-0000-000000000000",
+          "displayName": "Default Welcome Intent"
+        },
+        "intentDetectionConfidence": 1,
+        "diagnosticInfo": {
+          "Alternative Matched Intents": [ {
+            "Active": true,
+            "DisplayName": "Default Welcome Intent",
+            "Id": "00000000-0000-0000-0000-000000000000",
+            "Score": 1,
+            "Type": "NLU"
+          } ],
+          "Execution Sequence": [ {
+            "Step 1": {
+              "InitialState": {
+                "FlowState": {
+                  "FlowId": "00000000-0000-0000-0000-000000000000",
+                  "Name": "Default Start Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "ENTERING_PAGE"
+                  },
+                  "Version": 0
+                },
+                "MatchedIntent": {
+                  "Active": true,
+                  "DisplayName": "Default Welcome Intent",
+                  "Id": "00000000-0000-0000-0000-000000000000",
+                  "Score": 1,
+                  "Type": "NLU"
+                }
+              },
+              "Type": "INITIAL_STATE"
+            }
+          }, {
+            "Step 2": {
+              "FunctionExecution": {
+                "Responses": [ {
+                  "responseType": "HANDLER_PROMPT",
+                  "source": "VIRTUAL_AGENT",
+                  "text": {
+                    "text": [ "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?" ]
+                  }
+                }, {
+                  "payload": {
+                    "richContent": [ [ {
+                      "options": [ {
+                        "text": "Check Order Status"
+                      }, {
+                        "text": "Ask About Products"
+                      }, {
+                        "text": "General FAQs \u0026 Info"
+                      }, {
+                        "text": "Speak to a the owner"
+                      } ],
+                      "type": "chips"
+                    } ] ]
+                  },
+                  "responseType": "HANDLER_PROMPT",
+                  "source": "VIRTUAL_AGENT"
+                } ]
+              },
+              "StateMachine": {
+                "FlowLevelTransition": true,
+                "FlowState": {
+                  "FlowId": "00000000-0000-0000-0000-000000000000",
+                  "Name": "Default Start Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                },
+                "TriggeredIntent": "Default Welcome Intent",
+                "TriggeredTransitionRouteId": "9806fb16-12e4-403c-97fa-b92d3f4136c1"
+              },
+              "Type": "STATE_MACHINE"
+            }
+          }, {
+            "Step 3": {
+              "StateMachine": {
+                "FlowState": {
+                  "FlowId": "00000000-0000-0000-0000-000000000000",
+                  "Name": "Default Start Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                }
+              },
+              "Type": "STATE_MACHINE"
+            }
+          } ],
+          "Response Id": "1603c8e7-0216-4f2b-a58e-4e2c3c34d10e",
+          "Session Id": "8c9b88b8-af23-4ec5-b081-a588280dccc4",
+          "Triggered Transition Names": [ "9806fb16-12e4-403c-97fa-b92d3f4136c1" ]
+        },
+        "match": {
+          "intent": {
+            "name": "Default Welcome Intent"
+          },
+          "resolvedInput": "hi",
+          "matchType": "INTENT",
+          "confidence": 1
+        },
+        "advancedSettings": {
+          "loggingSettings": {
+            "enableInteractionLogging": true
+          }
+        },
+        "currentFlow": {
+          "name": "Default Start Flow"
+        },
+        "allowAnswerFeedback": true,
+        "generativeInfo": {
+          "actionTracingInfo": {
+            "name": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/playbooks/-/examples/-",
+            "actions": [ {
+              "userUtterance": {
+                "text": "hi"
+              }
+            }, {
+              "agentUtterance": {
+                "text": "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?"
+              }
+            } ],
+            "conversationState": "OUTPUT_STATE_PENDING"
+          }
+        },
+        "traceBlocks": [ {
+          "flowTraceMetadata": {
+            "flow": "00000000-0000-0000-0000-000000000000",
+            "displayName": "Default Start Flow"
+          },
+          "actions": [ {
+            "userUtterance": {
+              "text": "hi"
+            },
+            "startTime": {
+              "seconds": 1764426759,
+              "nanos": 710628000
+            },
+            "completeTime": {
+              "seconds": 1764426759,
+              "nanos": 710628000
+            },
+            "displayName": "USER_UTTERANCE"
+          }, {
+            "startTime": {
+              "seconds": 1764426759,
+              "nanos": 710701000
+            },
+            "completeTime": {
+              "seconds": 1764426759,
+              "nanos": 732423000
+            },
+            "displayName": "Intent match",
+            "intentMatch": {
+              "matchedIntents": [ {
+                "intentId": "00000000-0000-0000-0000-000000000000",
+                "displayName": "Default Welcome Intent",
+                "score": 1
+              } ]
+            }
+          }, {
+            "startTime": {
+              "seconds": 1764426759,
+              "nanos": 734353000
+            },
+            "completeTime": {
+              "seconds": 1764426759,
+              "nanos": 734396000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "INTENT_MATCH : Default Welcome Intent",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE",
+                "displayName": "Start Page",
+                "status": "TRANSITION_ROUTING"
+              },
+              "functionCall": {
+                "name": " "
+              }
+            }
+          }, {
+            "startTime": {
+              "seconds": 1764426759,
+              "nanos": 735586000
+            },
+            "completeTime": {
+              "seconds": 1764426759,
+              "nanos": 735616000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "FUNCTION_EXECUTED",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE",
+                "displayName": "Start Page",
+                "status": "TRANSITION_ROUTING"
+              }
+            }
+          }, {
+            "agentUtterance": {
+              "text": "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?"
+            },
+            "startTime": {
+              "seconds": 1764426759,
+              "nanos": 735784000
+            },
+            "completeTime": {
+              "seconds": 1764426759,
+              "nanos": 735785000
+            },
+            "displayName": "AGENT_UTTERANCE"
+          } ],
+          "startTime": {
+            "seconds": 1764426759,
+            "nanos": 710624000
+          },
+          "completeTime": {
+            "seconds": 1764426759,
+            "nanos": 735834000
+          }
+        } ]
+      }
+    },
+    "orderedExpectations": [ {
+      "expectations": [ {
+        "expectedPage": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedFlow": "Default Start Flow"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedIntent": "Default Welcome Intent"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedAgentReply": "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?"
+      } ]
+    } ],
+    "metricGoldens": [ {
+      "goldens": [ {
+        "goldenAgentUtterance": "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?"
+      } ]
+    } ]
+  }, {
+    "userInput": {
+      "input": {
+        "text": {
+          "text": "i have a question"
+        }
+      },
+      "enableWebhook": true
+    },
+    "agentOutput": {
+      "queryResult": {
+        "text": "i have a question",
+        "languageCode": "en",
+        "responseMessages": [ {
+          "text": {
+            "text": [ "I would be more than happy to answer any questions you might have ." ]
+          }
+        } ],
+        "currentPage": {
+          "name": "Start Page",
+          "flow": "FAQ \u0026 General info Flow"
+        },
+        "intent": {
+          "name": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/intents/be6d687a-a5d1-4714-89a5-69567ca1ea20",
+          "displayName": "user.faq.general"
+        },
+        "intentDetectionConfidence": 1,
+        "diagnosticInfo": {
+          "Alternative Matched Intents": [ {
+            "Active": true,
+            "DisplayName": "user.faq.general",
+            "Id": "be6d687a-a5d1-4714-89a5-69567ca1ea20",
+            "Score": 1,
+            "Type": "NLU"
+          } ],
+          "Execution Sequence": [ {
+            "Step 1": {
+              "InitialState": {
+                "FlowState": {
+                  "FlowId": "00000000-0000-0000-0000-000000000000",
+                  "Name": "Default Start Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                },
+                "MatchedIntent": {
+                  "Active": true,
+                  "DisplayName": "user.faq.general",
+                  "Id": "be6d687a-a5d1-4714-89a5-69567ca1ea20",
+                  "Score": 1,
+                  "Type": "NLU"
+                }
+              },
+              "Type": "INITIAL_STATE"
+            }
+          }, {
+            "Step 2": {
+              "FunctionExecution": {
+                "Responses": [ {
+                  "responseType": "HANDLER_PROMPT",
+                  "source": "VIRTUAL_AGENT",
+                  "text": {
+                    "text": [ "I would be more than happy to answer any questions you might have ." ]
+                  }
+                } ]
+              },
+              "StateMachine": {
+                "FlowLevelTransition": true,
+                "FlowState": {
+                  "FlowId": "00000000-0000-0000-0000-000000000000",
+                  "Name": "Default Start Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                },
+                "TargetFlow": "4aed26b0-dde9-4b74-aeba-96d955a9e04b",
+                "TriggeredIntent": "user.faq.general",
+                "TriggeredTransitionRouteId": "9eb76002-f5f9-4eec-9a35-b6db428e3e02"
+              },
+              "Type": "STATE_MACHINE"
+            }
+          }, {
+            "Step 3": {
+              "StateMachine": {
+                "FlowState": {
+                  "FlowId": "4aed26b0-dde9-4b74-aeba-96d955a9e04b",
+                  "Name": "FAQ \u0026 General info Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                }
+              },
+              "Type": "STATE_MACHINE"
+            }
+          } ],
+          "Response Id": "654f78c4-b8fa-49c0-b073-3f9b9f1ec1f9",
+          "Session Id": "8c9b88b8-af23-4ec5-b081-a588280dccc4",
+          "Transition Targets Chain": [ {
+            "TargetFlow": "4aed26b0-dde9-4b74-aeba-96d955a9e04b"
+          } ],
+          "Triggered Transition Names": [ "9eb76002-f5f9-4eec-9a35-b6db428e3e02" ]
+        },
+        "match": {
+          "intent": {
+            "name": "user.faq.general",
+            "description": "This intent is triggered when a user asks general faqs"
+          },
+          "resolvedInput": "i have a question",
+          "matchType": "INTENT",
+          "confidence": 1
+        },
+        "advancedSettings": {
+          "loggingSettings": {
+            "enableInteractionLogging": true
+          }
+        },
+        "currentFlow": {
+          "name": "FAQ \u0026 General info Flow"
+        },
+        "allowAnswerFeedback": true,
+        "generativeInfo": {
+          "actionTracingInfo": {
+            "name": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/playbooks/-/examples/-",
+            "actions": [ {
+              "userUtterance": {
+                "text": "i have a question"
+              }
+            }, {
+              "agentUtterance": {
+                "text": "I would be more than happy to answer any questions you might have ."
+              }
+            } ],
+            "conversationState": "OUTPUT_STATE_PENDING"
+          }
+        },
+        "traceBlocks": [ {
+          "flowTraceMetadata": {
+            "flow": "00000000-0000-0000-0000-000000000000",
+            "displayName": "Default Start Flow"
+          },
+          "actions": [ {
+            "userUtterance": {
+              "text": "i have a question"
+            },
+            "startTime": {
+              "seconds": 1764426764,
+              "nanos": 414844000
+            },
+            "completeTime": {
+              "seconds": 1764426764,
+              "nanos": 414845000
+            },
+            "displayName": "USER_UTTERANCE"
+          }, {
+            "startTime": {
+              "seconds": 1764426764,
+              "nanos": 414938000
+            },
+            "completeTime": {
+              "seconds": 1764426764,
+              "nanos": 432232000
+            },
+            "displayName": "Intent match",
+            "intentMatch": {
+              "matchedIntents": [ {
+                "intentId": "be6d687a-a5d1-4714-89a5-69567ca1ea20",
+                "displayName": "user.faq.general",
+                "score": 1
+              } ]
+            }
+          }, {
+            "startTime": {
+              "seconds": 1764426764,
+              "nanos": 432702000
+            },
+            "completeTime": {
+              "seconds": 1764426764,
+              "nanos": 432761000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "INTENT_MATCH : user.faq.general",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE",
+                "displayName": "Start Page",
+                "status": "TRANSITION_ROUTING"
+              },
+              "destination": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/4aed26b0-dde9-4b74-aeba-96d955a9e04b/pages/",
+              "functionCall": {
+                "name": " "
+              }
+            }
+          }, {
+            "startTime": {
+              "seconds": 1764426764,
+              "nanos": 441501000
+            },
+            "completeTime": {
+              "seconds": 1764426764,
+              "nanos": 441582000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "TRANSITION : user.faq.general",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/4aed26b0-dde9-4b74-aeba-96d955a9e04b/pages/START_PAGE",
+                "displayName": "Start Page",
+                "status": "TRANSITION_ROUTING"
+              }
+            }
+          } ],
+          "startTime": {
+            "seconds": 1764426764,
+            "nanos": 414839000
+          },
+          "completeTime": {
+            "seconds": 1764426764,
+            "nanos": 441586000
+          }
+        }, {
+          "flowTraceMetadata": {
+            "flow": "4aed26b0-dde9-4b74-aeba-96d955a9e04b",
+            "displayName": "FAQ \u0026 General info Flow"
+          },
+          "actions": [ {
+            "agentUtterance": {
+              "text": "I would be more than happy to answer any questions you might have ."
+            },
+            "startTime": {
+              "seconds": 1764426764,
+              "nanos": 441773000
+            },
+            "completeTime": {
+              "seconds": 1764426764,
+              "nanos": 441774000
+            },
+            "displayName": "AGENT_UTTERANCE"
+          } ],
+          "startTime": {
+            "seconds": 1764426764,
+            "nanos": 441586000
+          },
+          "completeTime": {
+            "seconds": 1764426764,
+            "nanos": 441831000
+          }
+        } ]
+      }
+    },
+    "orderedExpectations": [ {
+      "expectations": [ {
+        "expectedPage": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/4aed26b0-dde9-4b74-aeba-96d955a9e04b/pages/START_PAGE"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedFlow": "FAQ \u0026 General info Flow"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedIntent": "user.faq.general"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedAgentReply": "I would be more than happy to answer any questions you might have ."
+      } ]
+    } ],
+    "metricGoldens": [ {
+      "goldens": [ {
+        "goldenAgentUtterance": "I would be more than happy to answer any questions you might have ."
+      } ]
+    } ]
+  }, {
+    "userInput": {
+      "input": {
+        "text": {
+          "text": "can I refund ?"
+        }
+      },
+      "enableWebhook": true
+    },
+    "agentOutput": {
+      "queryResult": {
+        "text": "can I refund ?",
+        "languageCode": "en",
+        "responseMessages": [ {
+          "text": {
+            "text": [ "With the exception of few select cases , all purchases made are considered final .For this reason , we do not take returns or offer refunds." ]
+          }
+        } ],
+        "currentPage": {
+          "name": "refund policy",
+          "flow": "FAQ \u0026 General info Flow"
+        },
+        "intent": {
+          "name": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/intents/782a7e25-e79c-477a-b98d-cedd97de82ae",
+          "displayName": "refund policy"
+        },
+        "intentDetectionConfidence": 0.99270093,
+        "diagnosticInfo": {
+          "Alternative Matched Intents": [ {
+            "Active": true,
+            "DisplayName": "refund policy",
+            "Id": "782a7e25-e79c-477a-b98d-cedd97de82ae",
+            "Score": 0.99270093441009521,
+            "Type": "NLU"
+          } ],
+          "Execution Sequence": [ {
+            "Step 1": {
+              "InitialState": {
+                "FlowState": {
+                  "FlowId": "4aed26b0-dde9-4b74-aeba-96d955a9e04b",
+                  "Name": "FAQ \u0026 General info Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                },
+                "MatchedIntent": {
+                  "Active": true,
+                  "DisplayName": "refund policy",
+                  "Id": "782a7e25-e79c-477a-b98d-cedd97de82ae",
+                  "Score": 0.99270093441009521,
+                  "Type": "NLU"
+                }
+              },
+              "Type": "INITIAL_STATE"
+            }
+          }, {
+            "Step 2": {
+              "FunctionExecution": {
+              
+              },
+              "StateMachine": {
+                "FlowLevelTransition": true,
+                "FlowState": {
+                  "FlowId": "4aed26b0-dde9-4b74-aeba-96d955a9e04b",
+                  "Name": "FAQ \u0026 General info Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                },
+                "TargetPage": "4b279283-0850-4100-877c-ac43f6ec65c0",
+                "TriggeredIntent": "refund policy",
+                "TriggeredTransitionRouteId": "b9502cd8-32ee-4c5c-9f1a-ba77cbbb9d09"
+              },
+              "Type": "STATE_MACHINE"
+            }
+          }, {
+            "Step 3": {
+              "FunctionExecution": {
+                "Responses": [ {
+                  "responseType": "ENTRY_PROMPT",
+                  "source": "VIRTUAL_AGENT",
+                  "text": {
+                    "text": [ "With the exception of few select cases , all purchases made are considered final .For this reason , we do not take returns or offer refunds." ]
+                  }
+                } ]
+              },
+              "StateMachine": {
+                "FlowState": {
+                  "FlowId": "4aed26b0-dde9-4b74-aeba-96d955a9e04b",
+                  "Name": "FAQ \u0026 General info Flow",
+                  "PageState": {
+                    "Name": "refund policy",
+                    "PageId": "4b279283-0850-4100-877c-ac43f6ec65c0",
+                    "Status": "ENTERING_PAGE"
+                  },
+                  "Version": 0
+                }
+              },
+              "Type": "STATE_MACHINE"
+            }
+          }, {
+            "Step 4": {
+              "StateMachine": {
+                "FlowState": {
+                  "FlowId": "4aed26b0-dde9-4b74-aeba-96d955a9e04b",
+                  "Name": "FAQ \u0026 General info Flow",
+                  "PageState": {
+                    "FormFilled": true,
+                    "Name": "refund policy",
+                    "PageId": "4b279283-0850-4100-877c-ac43f6ec65c0",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                }
+              },
+              "Type": "STATE_MACHINE"
+            }
+          } ],
+          "Response Id": "722d9d69-0465-4a2c-806a-a9f4570f1f1d",
+          "Session Id": "8c9b88b8-af23-4ec5-b081-a588280dccc4",
+          "Transition Targets Chain": [ {
+            "TargetPage": "4b279283-0850-4100-877c-ac43f6ec65c0"
+          } ],
+          "Triggered Transition Names": [ "b9502cd8-32ee-4c5c-9f1a-ba77cbbb9d09" ]
+        },
+        "match": {
+          "intent": {
+            "name": "refund policy",
+            "description": "when user asks for a return or refund"
+          },
+          "resolvedInput": "can I refund ?",
+          "matchType": "INTENT",
+          "confidence": 0.99270093
+        },
+        "advancedSettings": {
+          "loggingSettings": {
+            "enableInteractionLogging": true
+          }
+        },
+        "currentFlow": {
+          "name": "FAQ \u0026 General info Flow"
+        },
+        "allowAnswerFeedback": true,
+        "generativeInfo": {
+          "actionTracingInfo": {
+            "name": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/playbooks/-/examples/-",
+            "actions": [ {
+              "userUtterance": {
+                "text": "can I refund ?"
+              }
+            }, {
+              "agentUtterance": {
+                "text": "With the exception of few select cases , all purchases made are considered final .For this reason , we do not take returns or offer refunds."
+              }
+            } ],
+            "conversationState": "OUTPUT_STATE_PENDING"
+          }
+        },
+        "traceBlocks": [ {
+          "flowTraceMetadata": {
+            "flow": "4aed26b0-dde9-4b74-aeba-96d955a9e04b",
+            "displayName": "FAQ \u0026 General info Flow"
+          },
+          "actions": [ {
+            "userUtterance": {
+              "text": "can I refund ?"
+            },
+            "startTime": {
+              "seconds": 1764426773,
+              "nanos": 203617000
+            },
+            "completeTime": {
+              "seconds": 1764426773,
+              "nanos": 203617000
+            },
+            "displayName": "USER_UTTERANCE"
+          }, {
+            "startTime": {
+              "seconds": 1764426773,
+              "nanos": 203703000
+            },
+            "completeTime": {
+              "seconds": 1764426773,
+              "nanos": 234097000
+            },
+            "displayName": "Intent match",
+            "intentMatch": {
+              "matchedIntents": [ {
+                "intentId": "782a7e25-e79c-477a-b98d-cedd97de82ae",
+                "displayName": "refund policy",
+                "score": 0.99270093
+              } ]
+            }
+          }, {
+            "startTime": {
+              "seconds": 1764426773,
+              "nanos": 234480000
+            },
+            "completeTime": {
+              "seconds": 1764426773,
+              "nanos": 234519000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "INTENT_MATCH : refund policy",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/4aed26b0-dde9-4b74-aeba-96d955a9e04b/pages/START_PAGE",
+                "displayName": "Start Page",
+                "status": "TRANSITION_ROUTING"
+              },
+              "functionCall": {
+                "name": " "
+              }
+            }
+          }, {
+            "startTime": {
+              "seconds": 1764426773,
+              "nanos": 235241000
+            },
+            "completeTime": {
+              "seconds": 1764426773,
+              "nanos": 235280000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "TRANSITION : ",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/4aed26b0-dde9-4b74-aeba-96d955a9e04b/pages/4b279283-0850-4100-877c-ac43f6ec65c0",
+                "displayName": "refund policy",
+                "status": "ENTERING_PAGE"
+              },
+              "functionCall": {
+                "name": " "
+              }
+            }
+          }, {
+            "startTime": {
+              "seconds": 1764426773,
+              "nanos": 236193000
+            },
+            "completeTime": {
+              "seconds": 1764426773,
+              "nanos": 236224000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "FUNCTION_EXECUTED",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/4aed26b0-dde9-4b74-aeba-96d955a9e04b/pages/4b279283-0850-4100-877c-ac43f6ec65c0",
+                "displayName": "refund policy",
+                "status": "TRANSITION_ROUTING"
+              }
+            }
+          }, {
+            "agentUtterance": {
+              "text": "With the exception of few select cases , all purchases made are considered final .For this reason , we do not take returns or offer refunds."
+            },
+            "startTime": {
+              "seconds": 1764426773,
+              "nanos": 236377000
+            },
+            "completeTime": {
+              "seconds": 1764426773,
+              "nanos": 236378000
+            },
+            "displayName": "AGENT_UTTERANCE"
+          } ],
+          "startTime": {
+            "seconds": 1764426773,
+            "nanos": 203613000
+          },
+          "completeTime": {
+            "seconds": 1764426773,
+            "nanos": 236466000
+          }
+        } ]
+      }
+    },
+    "orderedExpectations": [ {
+      "expectations": [ {
+        "expectedPage": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/4aed26b0-dde9-4b74-aeba-96d955a9e04b/pages/4b279283-0850-4100-877c-ac43f6ec65c0"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedFlow": "FAQ \u0026 General info Flow"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedIntent": "refund policy"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedAgentReply": "With the exception of few select cases , all purchases made are considered final .For this reason , we do not take returns or offer refunds."
+      } ]
+    } ],
+    "metricGoldens": [ {
+      "goldens": [ {
+        "goldenAgentUtterance": "With the exception of few select cases , all purchases made are considered final .For this reason , we do not take returns or offer refunds."
+      } ]
+    } ]
+  } ],
+  "createTime": {
+    "seconds": 1764426798,
+    "nanos": 93569000
+  },
+  "testConfig": {
+    "startFlow": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE",
+    "textSession": {
+    
+    }
+  },
+  "languageCode": "en"
+}

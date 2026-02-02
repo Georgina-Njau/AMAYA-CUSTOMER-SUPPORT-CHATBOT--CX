@@ -1,0 +1,122 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Check Order Status"
+            }, {
+              "text": "Ask About Products"
+            }, {
+              "text": "General FAQs \u0026 Info"
+            }, {
+              "text": "Speak to a the owner"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9806fb16-12e4-403c-97fa-b92d3f4136c1"
+  }, {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "6b7e2cce-5095-4d04-afe0-58f00cda0b5e",
+    "description": "Initial Greeting"
+  }, {
+    "intent": "user.speak.to.agent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure! I would be more than happy to help you with that !" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Agent Handoff Flow",
+    "name": "b07ba2bb-9d30-46fc-a8f2-1b912e5e0456",
+    "description": "make sure the initial intent routes the user to this new data collection page."
+  }, {
+    "intent": "user.check_inventory",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which product were you hoping to get more information on ?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Product Inquiry Flow",
+    "name": "6516fee4-5af8-4504-85a5-e54bf49b9ad8",
+    "description": "First time customers  \u0026 Product Discovery"
+  }, {
+    "intent": "user.faq.general",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I would be more than happy to answer any questions you might have ." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "FAQ \u0026 General info Flow",
+    "name": "9eb76002-f5f9-4eec-9a35-b6db428e3e02",
+    "description": "General \u0026 Frequently Asked Questions (FAQs"
+  }, {
+    "intent": "user.place.order",
+    "condition": "$intent.params = user.place.order",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Place order ",
+    "name": "c540931b-f84d-459f-98c6-1f6c0114e80a",
+    "description": "takes/records the order info."
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1d306f4c-9d69-44f5-9bff-456785cab5a8"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "01f7bc8f-1f47-45ec-8859-8318d8076f9f"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "fa58e6db-f108-4530-907f-2005049bb254",
+    "languageCode": "en"
+  } ]
+}

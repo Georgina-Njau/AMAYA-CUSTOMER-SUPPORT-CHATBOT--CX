@@ -1,0 +1,761 @@
+{
+  "name": "a78ed646-bd43-4cf9-840b-acaf572335f3",
+  "displayName": "check inventory",
+  "conversationTurns": [ {
+    "userInput": {
+      "input": {
+        "text": {
+          "text": "hi"
+        }
+      },
+      "enableWebhook": true
+    },
+    "agentOutput": {
+      "queryResult": {
+        "text": "hi",
+        "languageCode": "en",
+        "responseMessages": [ {
+          "text": {
+            "text": [ "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?" ]
+          }
+        } ],
+        "currentPage": {
+          "name": "Start Page",
+          "flow": "Default Start Flow"
+        },
+        "intent": {
+          "name": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/intents/00000000-0000-0000-0000-000000000000",
+          "displayName": "Default Welcome Intent"
+        },
+        "intentDetectionConfidence": 1,
+        "diagnosticInfo": {
+          "Alternative Matched Intents": [ {
+            "Active": true,
+            "DisplayName": "Default Welcome Intent",
+            "Id": "00000000-0000-0000-0000-000000000000",
+            "Score": 1,
+            "Type": "NLU"
+          } ],
+          "Execution Sequence": [ {
+            "Step 1": {
+              "InitialState": {
+                "FlowState": {
+                  "FlowId": "00000000-0000-0000-0000-000000000000",
+                  "Name": "Default Start Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "ENTERING_PAGE"
+                  },
+                  "Version": 0
+                },
+                "MatchedIntent": {
+                  "Active": true,
+                  "DisplayName": "Default Welcome Intent",
+                  "Id": "00000000-0000-0000-0000-000000000000",
+                  "Score": 1,
+                  "Type": "NLU"
+                }
+              },
+              "Type": "INITIAL_STATE"
+            }
+          }, {
+            "Step 2": {
+              "FunctionExecution": {
+                "Responses": [ {
+                  "responseType": "HANDLER_PROMPT",
+                  "source": "VIRTUAL_AGENT",
+                  "text": {
+                    "text": [ "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?" ]
+                  }
+                }, {
+                  "payload": {
+                    "richContent": [ [ {
+                      "options": [ {
+                        "text": "Check Order Status"
+                      }, {
+                        "text": "Ask About Products"
+                      }, {
+                        "text": "General FAQs \u0026 Info"
+                      }, {
+                        "text": "Speak to a the owner"
+                      } ],
+                      "type": "chips"
+                    } ] ]
+                  },
+                  "responseType": "HANDLER_PROMPT",
+                  "source": "VIRTUAL_AGENT"
+                } ]
+              },
+              "StateMachine": {
+                "FlowLevelTransition": true,
+                "FlowState": {
+                  "FlowId": "00000000-0000-0000-0000-000000000000",
+                  "Name": "Default Start Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                },
+                "TriggeredIntent": "Default Welcome Intent",
+                "TriggeredTransitionRouteId": "9806fb16-12e4-403c-97fa-b92d3f4136c1"
+              },
+              "Type": "STATE_MACHINE"
+            }
+          }, {
+            "Step 3": {
+              "StateMachine": {
+                "FlowState": {
+                  "FlowId": "00000000-0000-0000-0000-000000000000",
+                  "Name": "Default Start Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                }
+              },
+              "Type": "STATE_MACHINE"
+            }
+          } ],
+          "Response Id": "bf930429-cdf8-40ea-b368-248f16004ce6",
+          "Session Id": "4f4a28f7-ca07-4e39-a368-9c1c798b1ba5",
+          "Triggered Transition Names": [ "9806fb16-12e4-403c-97fa-b92d3f4136c1" ]
+        },
+        "match": {
+          "intent": {
+            "name": "Default Welcome Intent"
+          },
+          "resolvedInput": "hi",
+          "matchType": "INTENT",
+          "confidence": 1
+        },
+        "advancedSettings": {
+          "loggingSettings": {
+            "enableInteractionLogging": true
+          }
+        },
+        "currentFlow": {
+          "name": "Default Start Flow"
+        },
+        "allowAnswerFeedback": true,
+        "generativeInfo": {
+          "actionTracingInfo": {
+            "name": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/playbooks/-/examples/-",
+            "actions": [ {
+              "userUtterance": {
+                "text": "hi"
+              }
+            }, {
+              "agentUtterance": {
+                "text": "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?"
+              }
+            } ],
+            "conversationState": "OUTPUT_STATE_PENDING"
+          }
+        },
+        "traceBlocks": [ {
+          "flowTraceMetadata": {
+            "flow": "00000000-0000-0000-0000-000000000000",
+            "displayName": "Default Start Flow"
+          },
+          "actions": [ {
+            "userUtterance": {
+              "text": "hi"
+            },
+            "startTime": {
+              "seconds": 1764426036,
+              "nanos": 501058000
+            },
+            "completeTime": {
+              "seconds": 1764426036,
+              "nanos": 501058000
+            },
+            "displayName": "USER_UTTERANCE"
+          }, {
+            "startTime": {
+              "seconds": 1764426036,
+              "nanos": 501167000
+            },
+            "completeTime": {
+              "seconds": 1764426037,
+              "nanos": 120231000
+            },
+            "displayName": "Intent match",
+            "intentMatch": {
+              "matchedIntents": [ {
+                "intentId": "00000000-0000-0000-0000-000000000000",
+                "displayName": "Default Welcome Intent",
+                "score": 1
+              } ]
+            }
+          }, {
+            "startTime": {
+              "seconds": 1764426037,
+              "nanos": 121761000
+            },
+            "completeTime": {
+              "seconds": 1764426037,
+              "nanos": 121797000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "INTENT_MATCH : Default Welcome Intent",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE",
+                "displayName": "Start Page",
+                "status": "TRANSITION_ROUTING"
+              },
+              "functionCall": {
+                "name": " "
+              }
+            }
+          }, {
+            "startTime": {
+              "seconds": 1764426037,
+              "nanos": 122694000
+            },
+            "completeTime": {
+              "seconds": 1764426037,
+              "nanos": 122715000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "FUNCTION_EXECUTED",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE",
+                "displayName": "Start Page",
+                "status": "TRANSITION_ROUTING"
+              }
+            }
+          }, {
+            "agentUtterance": {
+              "text": "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?"
+            },
+            "startTime": {
+              "seconds": 1764426037,
+              "nanos": 122869000
+            },
+            "completeTime": {
+              "seconds": 1764426037,
+              "nanos": 122870000
+            },
+            "displayName": "AGENT_UTTERANCE"
+          } ],
+          "startTime": {
+            "seconds": 1764426036,
+            "nanos": 501053000
+          },
+          "completeTime": {
+            "seconds": 1764426037,
+            "nanos": 122921000
+          }
+        } ]
+      }
+    },
+    "orderedExpectations": [ {
+      "expectations": [ {
+        "expectedPage": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedFlow": "Default Start Flow"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedIntent": "Default Welcome Intent"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedAgentReply": "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?"
+      } ]
+    } ],
+    "metricGoldens": [ {
+      "goldens": [ {
+        "goldenAgentUtterance": "Welcome ,I am Amaya ,the virtual agent for Jewels\u0026TrinketsKE.I can help with Order Status, Product Info, or general questions. What can I do for you?"
+      } ]
+    } ]
+  }, {
+    "userInput": {
+      "input": {
+        "text": {
+          "text": "Are the Pendants Y2K in stock ?"
+        }
+      },
+      "enableWebhook": true
+    },
+    "agentOutput": {
+      "queryResult": {
+        "text": "Are the Pendants Y2K in stock ?",
+        "languageCode": "en",
+        "parameters": {
+          "any": "Pendants Y2K"
+        },
+        "responseMessages": [ {
+          "text": {
+            "text": [ "Which product were you hoping to get more information on ?\nI am sorry, I could not find the item or check its stock." ]
+          }
+        } ],
+        "webhookPayloads": [ {
+        
+        } ],
+        "currentPage": {
+          "name": "Collect Item Name",
+          "flow": "Product Inquiry Flow"
+        },
+        "intent": {
+          "name": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/intents/46bc8a2d-5ff5-4af9-b9b0-32a71c9d26e3",
+          "displayName": "user.check_inventory"
+        },
+        "intentDetectionConfidence": 0.52222222,
+        "diagnosticInfo": {
+          "Alternative Matched Intents": [ {
+            "Active": true,
+            "DisplayName": "user.check_inventory",
+            "Id": "46bc8a2d-5ff5-4af9-b9b0-32a71c9d26e3",
+            "Parameters": {
+              "any": {
+                "original": "Pendants Y2K",
+                "resolved": "Pendants Y2K",
+                "type": "@sys.any"
+              }
+            },
+            "Score": 0.52222222089767456,
+            "Type": "NLU"
+          } ],
+          "Execution Sequence": [ {
+            "Step 1": {
+              "InitialState": {
+                "FlowState": {
+                  "FlowId": "00000000-0000-0000-0000-000000000000",
+                  "Name": "Default Start Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                },
+                "MatchedIntent": {
+                  "Active": true,
+                  "DisplayName": "user.check_inventory",
+                  "Id": "46bc8a2d-5ff5-4af9-b9b0-32a71c9d26e3",
+                  "Parameters": {
+                    "any": {
+                      "original": "Pendants Y2K",
+                      "resolved": "Pendants Y2K",
+                      "type": "@sys.any"
+                    }
+                  },
+                  "Score": 0.52222222089767456,
+                  "Type": "NLU"
+                },
+                "SessionParameters": {
+                  "any": "Pendants Y2K"
+                }
+              },
+              "Type": "INITIAL_STATE"
+            }
+          }, {
+            "Step 2": {
+              "FunctionExecution": {
+                "Responses": [ {
+                  "responseType": "HANDLER_PROMPT",
+                  "source": "VIRTUAL_AGENT",
+                  "text": {
+                    "text": [ "Which product were you hoping to get more information on ?" ]
+                  }
+                } ]
+              },
+              "StateMachine": {
+                "FlowLevelTransition": true,
+                "FlowState": {
+                  "FlowId": "00000000-0000-0000-0000-000000000000",
+                  "Name": "Default Start Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                },
+                "TargetFlow": "25d97ce9-aa5a-4c48-9968-4c730a44e50a",
+                "TriggeredIntent": "user.check_inventory",
+                "TriggeredTransitionRouteId": "6516fee4-5af8-4504-85a5-e54bf49b9ad8"
+              },
+              "Type": "STATE_MACHINE"
+            }
+          }, {
+            "Step 3": {
+              "FunctionExecution": {
+              
+              },
+              "StateMachine": {
+                "FlowLevelTransition": true,
+                "FlowState": {
+                  "FlowId": "25d97ce9-aa5a-4c48-9968-4c730a44e50a",
+                  "Name": "Product Inquiry Flow",
+                  "PageState": {
+                    "Name": "Start Page",
+                    "PageId": "START_PAGE",
+                    "Status": "TRANSITION_ROUTING"
+                  },
+                  "Version": 0
+                },
+                "TargetPage": "33a86df3-ca0a-485a-b55c-c9f91c073420",
+                "TriggeredIntent": "user.check_inventory",
+                "TriggeredTransitionRouteId": "e8798af3-531a-4737-9050-beeb05dc3357"
+              },
+              "Type": "STATE_MACHINE"
+            }
+          }, {
+            "Step 4": {
+              "FunctionExecution": {
+                "Responses": [ {
+                  "responseType": "ENTRY_PROMPT",
+                  "source": "WEBHOOK",
+                  "text": {
+                    "text": [ "I am sorry, I could not find the item or check its stock." ]
+                  }
+                } ],
+                "Webhook": {
+                  "DisplayName": "Check Inventory",
+                  "ID": "f92f4e5d-f8a4-4aa2-bcd4-fe6f20b66751",
+                  "Latency": "1022 ms",
+                  "Status": "OK",
+                  "Tag": "check_inventory",
+                  "URL": "https://script.google.com/macros/s/AKfycbzJj1JSxFXFoq2el_f4Or2crf9oNILQvfppB0DlWjILP2Nbuxr1IxZjkeYmPtJFOI6T4Q/exec",
+                  "Unauthorized FulfillmentResponse": false
+                }
+              },
+              "StateMachine": {
+                "FlowState": {
+                  "FlowId": "25d97ce9-aa5a-4c48-9968-4c730a44e50a",
+                  "Name": "Product Inquiry Flow",
+                  "PageState": {
+                    "Name": "Collect Item Name",
+                    "PageId": "33a86df3-ca0a-485a-b55c-c9f91c073420",
+                    "Status": "ENTERING_PAGE"
+                  },
+                  "Version": 0
+                }
+              },
+              "Type": "STATE_MACHINE"
+            }
+          }, {
+            "Step 5": {
+              "FunctionExecution": {
+              
+              },
+              "StateMachine": {
+                "FlowState": {
+                  "FlowId": "25d97ce9-aa5a-4c48-9968-4c730a44e50a",
+                  "Name": "Product Inquiry Flow",
+                  "PageState": {
+                    "ActiveParameter": "product_query",
+                    "FormFilled": false,
+                    "Name": "Collect Item Name",
+                    "PageId": "33a86df3-ca0a-485a-b55c-c9f91c073420",
+                    "Status": "PROCESSING_FORM"
+                  },
+                  "Version": 0
+                }
+              },
+              "Type": "STATE_MACHINE"
+            }
+          } ],
+          "Response Id": "aed66307-52a1-428d-ae9f-5569f5ee0553",
+          "Session Id": "4f4a28f7-ca07-4e39-a368-9c1c798b1ba5",
+          "Transition Targets Chain": [ {
+            "TargetFlow": "25d97ce9-aa5a-4c48-9968-4c730a44e50a"
+          }, {
+            "TargetPage": "33a86df3-ca0a-485a-b55c-c9f91c073420"
+          } ],
+          "Triggered Transition Names": [ "6516fee4-5af8-4504-85a5-e54bf49b9ad8", "e8798af3-531a-4737-9050-beeb05dc3357" ],
+          "Webhook Latencies (ms)": [ 1022 ]
+        },
+        "webhookStatuses": [ {
+        
+        } ],
+        "match": {
+          "intent": {
+            "name": "user.check_inventory",
+            "description": "This intent is triggered when a user wants more information about a product."
+          },
+          "parameters": {
+            "any": "Pendants Y2K"
+          },
+          "resolvedInput": "Are the Pendants Y2K in stock ?",
+          "matchType": "INTENT",
+          "confidence": 0.52222222,
+          "parametersOriginalValues": {
+            "any": "Pendants Y2K"
+          }
+        },
+        "advancedSettings": {
+          "loggingSettings": {
+            "enableInteractionLogging": true
+          }
+        },
+        "formFillingInfo": {
+          "parameter": "product_query",
+          "entityType": "projects/-/locations/-/agents/-/entityTypes/sys.any"
+        },
+        "webhookIds": [ "f92f4e5d-f8a4-4aa2-bcd4-fe6f20b66751" ],
+        "webhookDisplayNames": [ "Check Inventory" ],
+        "webhookLatencies": [ {
+          "seconds": 1,
+          "nanos": 22000000
+        } ],
+        "webhookTags": [ "check_inventory" ],
+        "currentFlow": {
+          "name": "Product Inquiry Flow"
+        },
+        "allowAnswerFeedback": true,
+        "generativeInfo": {
+          "actionTracingInfo": {
+            "name": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/playbooks/-/examples/-",
+            "actions": [ {
+              "userUtterance": {
+                "text": "Are the Pendants Y2K in stock ?"
+              }
+            }, {
+              "agentUtterance": {
+                "text": "Which product were you hoping to get more information on ?\nI am sorry, I could not find the item or check its stock."
+              }
+            } ],
+            "conversationState": "OUTPUT_STATE_PENDING"
+          }
+        },
+        "traceBlocks": [ {
+          "flowTraceMetadata": {
+            "flow": "00000000-0000-0000-0000-000000000000",
+            "displayName": "Default Start Flow"
+          },
+          "actions": [ {
+            "userUtterance": {
+              "text": "Are the Pendants Y2K in stock ?"
+            },
+            "startTime": {
+              "seconds": 1764426056,
+              "nanos": 108573000
+            },
+            "completeTime": {
+              "seconds": 1764426056,
+              "nanos": 108574000
+            },
+            "displayName": "USER_UTTERANCE"
+          }, {
+            "startTime": {
+              "seconds": 1764426056,
+              "nanos": 108652000
+            },
+            "completeTime": {
+              "seconds": 1764426056,
+              "nanos": 595617000
+            },
+            "displayName": "Intent match",
+            "intentMatch": {
+              "matchedIntents": [ {
+                "intentId": "46bc8a2d-5ff5-4af9-b9b0-32a71c9d26e3",
+                "displayName": "user.check_inventory",
+                "score": 0.52222222
+              } ]
+            }
+          }, {
+            "startTime": {
+              "seconds": 1764426056,
+              "nanos": 596142000
+            },
+            "completeTime": {
+              "seconds": 1764426056,
+              "nanos": 596178000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "INTENT_MATCH : user.check_inventory",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE",
+                "displayName": "Start Page",
+                "status": "TRANSITION_ROUTING"
+              },
+              "destination": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/25d97ce9-aa5a-4c48-9968-4c730a44e50a/pages/",
+              "functionCall": {
+                "name": " "
+              }
+            }
+          }, {
+            "startTime": {
+              "seconds": 1764426056,
+              "nanos": 603912000
+            },
+            "completeTime": {
+              "seconds": 1764426056,
+              "nanos": 604011000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "TRANSITION : user.check_inventory",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/25d97ce9-aa5a-4c48-9968-4c730a44e50a/pages/START_PAGE",
+                "displayName": "Start Page",
+                "status": "TRANSITION_ROUTING"
+              },
+              "functionCall": {
+                "name": " "
+              }
+            }
+          } ],
+          "startTime": {
+            "seconds": 1764426056,
+            "nanos": 108569000
+          },
+          "completeTime": {
+            "seconds": 1764426056,
+            "nanos": 604016000
+          }
+        }, {
+          "flowTraceMetadata": {
+            "flow": "25d97ce9-aa5a-4c48-9968-4c730a44e50a",
+            "displayName": "Product Inquiry Flow"
+          },
+          "actions": [ {
+            "startTime": {
+              "seconds": 1764426056,
+              "nanos": 604761000
+            },
+            "completeTime": {
+              "seconds": 1764426056,
+              "nanos": 604787000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "TRANSITION : ",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/25d97ce9-aa5a-4c48-9968-4c730a44e50a/pages/33a86df3-ca0a-485a-b55c-c9f91c073420",
+                "displayName": "Collect Item Name",
+                "status": "ENTERING_PAGE"
+              },
+              "functionCall": {
+                "name": "check_inventory "
+              }
+            }
+          }, {
+            "toolUse": {
+              "tool": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/webhooks/f92f4e5d-f8a4-4aa2-bcd4-fe6f20b66751",
+              "displayName": "Check Inventory",
+              "webhookToolTrace": {
+                "webhookTag": "check_inventory",
+                "webhookUri": "https://script.google.com/macros/s/AKfycbzJj1JSxFXFoq2el_f4Or2crf9oNILQvfppB0DlWjILP2Nbuxr1IxZjkeYmPtJFOI6T4Q/exec"
+              }
+            },
+            "startTime": {
+              "seconds": 1764426056,
+              "nanos": 605109000
+            },
+            "completeTime": {
+              "seconds": 1764426057,
+              "nanos": 640128000
+            },
+            "displayName": "Webhook Check Inventory"
+          }, {
+            "startTime": {
+              "seconds": 1764426057,
+              "nanos": 640376000
+            },
+            "completeTime": {
+              "seconds": 1764426057,
+              "nanos": 640740000
+            },
+            "displayName": "State Machine Update",
+            "flowStateUpdate": {
+              "eventType": "FUNCTION_EXECUTED",
+              "pageState": {
+                "page": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/25d97ce9-aa5a-4c48-9968-4c730a44e50a/pages/33a86df3-ca0a-485a-b55c-c9f91c073420",
+                "displayName": "Collect Item Name",
+                "status": "PROCESSING_FORM"
+              },
+              "functionCall": {
+                "name": " "
+              }
+            }
+          }, {
+            "agentUtterance": {
+              "text": "Which product were you hoping to get more information on ?\nI am sorry, I could not find the item or check its stock."
+            },
+            "startTime": {
+              "seconds": 1764426057,
+              "nanos": 641320000
+            },
+            "completeTime": {
+              "seconds": 1764426057,
+              "nanos": 641321000
+            },
+            "displayName": "AGENT_UTTERANCE"
+          } ],
+          "startTime": {
+            "seconds": 1764426056,
+            "nanos": 604016000
+          },
+          "completeTime": {
+            "seconds": 1764426057,
+            "nanos": 641381000
+          }
+        } ]
+      }
+    },
+    "orderedExpectations": [ {
+      "expectations": [ {
+        "expectedAction": {
+          "toolUse": {
+            "tool": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/webhooks/f92f4e5d-f8a4-4aa2-bcd4-fe6f20b66751"
+          }
+        }
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedPage": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/25d97ce9-aa5a-4c48-9968-4c730a44e50a/pages/33a86df3-ca0a-485a-b55c-c9f91c073420"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedFlow": "Product Inquiry Flow"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedIntent": "user.check_inventory"
+      } ]
+    }, {
+      "expectations": [ {
+        "expectedAgentReply": "Which product were you hoping to get more information on ?\nI am sorry, I could not find the item or check its stock."
+      } ]
+    } ],
+    "metricGoldens": [ {
+      "goldens": [ {
+        "goldenAgentUtterance": "Which product were you hoping to get more information on ?\nI am sorry, I could not find the item or check its stock."
+      } ]
+    } ]
+  } ],
+  "orderedExpectations": [ {
+    "expectations": [ {
+      "expectedAction": {
+        "toolUse": {
+          "tool": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/webhooks/f92f4e5d-f8a4-4aa2-bcd4-fe6f20b66751"
+        }
+      }
+    } ]
+  } ],
+  "createTime": {
+    "seconds": 1764426379,
+    "nanos": 906045000
+  },
+  "testConfig": {
+    "startFlow": "projects/amaya-customer-support-chatbot/locations/us-central1/agents/89555fdc-7255-40d3-bf13-7f0df4c20c55/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE",
+    "textSession": {
+    
+    }
+  },
+  "languageCode": "en"
+}

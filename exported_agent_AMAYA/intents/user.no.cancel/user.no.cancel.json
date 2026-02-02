@@ -1,0 +1,11 @@
+{
+  "name": "f2d6be3f-8bd6-4891-ae05-5b101562d9ec",
+  "displayName": "user.no.cancel",
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-contextual",
+    "value": "sys-contextual"
+  } ],
+  "description": "Used as a follow-up intent to cancel the handoff and transition back to the Default Start Flow.",
+  "numTrainingPhrases": 5
+}

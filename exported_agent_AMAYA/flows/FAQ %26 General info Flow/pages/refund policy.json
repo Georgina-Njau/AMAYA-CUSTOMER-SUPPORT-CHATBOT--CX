@@ -1,0 +1,15 @@
+{
+  "name": "4b279283-0850-4100-877c-ac43f6ec65c0",
+  "displayName": "refund policy",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "With the exception of few select cases , all purchases made are considered final .For this reason , we do not take returns or offer refunds." ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

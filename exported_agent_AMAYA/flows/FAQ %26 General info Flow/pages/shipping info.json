@@ -1,0 +1,15 @@
+{
+  "name": "0562a965-b21c-44cd-82e2-79ec1c51b7bb",
+  "displayName": "shipping info",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Shipping cost and time may vary depending on your location . To get a quote for this , please reach out to us via WhatsApp at 0798878370 , or on our social media handles @jewelsandtrinketske for both instagram and TikTok." ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

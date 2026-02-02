@@ -1,0 +1,11 @@
+{
+  "name": "6403aaa3-3345-4704-a20d-c4bcdfb9aee9",
+  "displayName": "storeOrderInfo",
+  "genericWebService": {
+    "uri": "https://script.google.com/macros/s/AKfycbwoW6mCnoKoKEF9-iDIMLyvB5g3waVm5cZejKAjb7yfBEXvdzWg0YAmUMN3LAEAIKD-1g/exec",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

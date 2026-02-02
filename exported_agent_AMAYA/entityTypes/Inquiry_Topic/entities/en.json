@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "size",
+    "synonyms": [ "dimensions", "measurements", "proportions", "size" ],
+    "languageCode": "en"
+  }, {
+    "value": "wholesale",
+    "synonyms": [ "bulk", "distribution", "large-scale", "wholesale" ],
+    "languageCode": "en"
+  }, {
+    "value": "location",
+    "synonyms": [ "address", "directions", "location", "where" ],
+    "languageCode": "en"
+  }, {
+    "value": "returns",
+    "synonyms": [ "credit", "exchange", "refund", "returns" ],
+    "languageCode": "en"
+  }, {
+    "value": "shipping",
+    "synonyms": [ "delivery", "shipment", "shipping", "transport" ],
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "2a26b6c3-4f28-49b0-b65b-d174cefe0205",
+  "displayName": "payment options",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Due to the online nature of our business , we only accept mobile money payments at the moment. " ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

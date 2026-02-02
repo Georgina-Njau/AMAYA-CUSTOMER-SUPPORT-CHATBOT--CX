@@ -1,0 +1,7 @@
+{
+  "name": "782a7e25-e79c-477a-b98d-cedd97de82ae",
+  "displayName": "refund policy",
+  "priority": 500000,
+  "description": "when user asks for a return or refund",
+  "numTrainingPhrases": 7
+}

@@ -1,0 +1,11 @@
+{
+  "name": "f92f4e5d-f8a4-4aa2-bcd4-fe6f20b66751",
+  "displayName": "Check Inventory",
+  "genericWebService": {
+    "uri": "https://script.google.com/macros/s/AKfycbzJj1JSxFXFoq2el_f4Or2crf9oNILQvfppB0DlWjILP2Nbuxr1IxZjkeYmPtJFOI6T4Q/exec",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

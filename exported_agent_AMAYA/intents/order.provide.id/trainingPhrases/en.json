@@ -1,0 +1,21 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "My order is under the name \"Alice Njeri\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Here is my order: **ORD9876**"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My order number is **AMY-12345**"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

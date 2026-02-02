@@ -1,0 +1,46 @@
+{
+  "name": "6c5c6323-ce09-4784-94d3-4c83dbd0f853",
+  "displayName": "Collect_DeliveryMethod",
+  "form": {
+    "parameters": [ {
+      "displayName": "delivery_method",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Which delivery method would you like — pickup, courier or home delivery?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirm_Order",
+    "name": "8f95076a-e33f-4a49-b105-099c543c2445"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Confirm_Order",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Perfect! Let me confirm your order details." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "delivery_method",
+        "value": "$session.params.raw_user_input"
+      } ]
+    },
+    "name": "047d0d01-9112-4583-b634-00aed0282ef7"
+  } ]
+}

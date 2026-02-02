@@ -1,0 +1,7 @@
+{
+  "name": "d0daad9d-b7be-4199-8b9b-2d841b17fe84",
+  "displayName": "payment options",
+  "priority": 500000,
+  "description": "triggered when the user asks about payment options.",
+  "numTrainingPhrases": 4
+}
